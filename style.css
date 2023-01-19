@@ -1,5 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
 }
 
+/*.wrapper {
+	width: 100%;
+	display: grid;
+	grid-template: minmax(500px, auto) 2fr minmax(300px, auto) / 2fr;
+	grid-template-areas:
+	"header"
+	"main"
+	"footer";
+}*/
+
+.header__contacts {
+	display: grid;
+    grid-column: 3/4;
+    justify-content: center;
+    margin-top: -50%;
+	
+}
+
+.adress-icon,
+.adress-icon a {
+    padding: 1%;
+    color: rgb(14, 13, 13); 
+	font-family: 'Roboto', sans-serif;
+}
+
+.adress-icon a:hover {
+    cursor: pointer;
+    color: #310719;
+}
