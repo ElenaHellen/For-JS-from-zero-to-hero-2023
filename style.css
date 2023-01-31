@@ -7,32 +7,63 @@ html, body {
 	padding: 0;
 }
 
-/*.wrapper {
-	width: 100%;
-	display: grid;
-	grid-template: minmax(500px, auto) 2fr minmax(300px, auto) / 2fr;
-	grid-template-areas:
-	"header"
-	"main"
-	"footer";
-}*/
+p {
+	font-family:'Times New Roman', Times, serif;
+	font-size: 18px;
+}
 
-.header__contacts {
-	display: grid;
-    grid-column: 3/4;
-    justify-content: center;
-    margin-top: -50%;
+.name p {
+	font-size: 30px;
+	font-style: bold;
+	align-items: end;
+	justify-content: end;
 	
 }
 
-.adress-icon,
-.adress-icon a {
-    padding: 1%;
-    color: rgb(14, 13, 13); 
-	font-family: 'Roboto', sans-serif;
+.container {
+	width: 100%;
+	display: grid;
+	grid-gap: 5%;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	
 }
 
-.adress-icon a:hover {
+.name {
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 2;
+	margin-left: 45%;
+}
+
+.sidebar { 
+	grid-row: 2/2;
+	margin-left: 20%;
+}
+
+.content {
+	grid-row: 2/2;
+	margin-right: 20%;
+}
+
+.photo img {
+	width: 70%;
+	height: 50%;
+}
+
+.icons,
+.icons a {
+    color: black;
+	padding: 1%;
+	font-size: 20px;
+	
+}
+
+.icons a:hover {
     cursor: pointer;
-    color: #310719;
+    color: #EF2779;
+}
+
+.icons img:hover {
+	display: inline-block;
+	transform: scale(2, 2);
 }
