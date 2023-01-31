@@ -17,7 +17,6 @@ p {
 	font-style: bold;
 	align-items: end;
 	justify-content: end;
-	
 }
 
 .container {
@@ -25,8 +24,7 @@ p {
 	display: grid;
 	grid-gap: 5%;
 	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	
+	justify-content: center;	
 }
 
 .name {
@@ -50,7 +48,6 @@ p {
     color: black;
 	padding: 1%;
 	font-size: 20px;
-	
 }
 
 .icons a:hover {
